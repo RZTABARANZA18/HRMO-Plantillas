@@ -1,0 +1,187 @@
+.header{
+    text-align: center;
+    padding-top: 25px;
+}
+.header p{
+    font-weight: bold;
+    line-height: .5;
+    font-size: 16px;   
+}
+.header h1 {
+    color: black;
+    margin: 0;
+    font-size: 30px;
+}
+.table {
+    width: 1680px;
+    padding: 10px;
+    margin: auto; 
+    background-color: white;
+    height: 1120px;
+    padding-top: 5px;
+    margin-bottom: 20px;
+}
+th{
+    font-size: 16px;
+    padding: 2px;
+    border: 2px solid black;
+    background-color: white;
+    margin: 0px;
+}
+
+td{
+    border: 2px solid black;
+    background-color: white;
+}
+
+td p{
+    text-align: center;
+    background-color: white;
+    color: red;
+}
+
+.table p{
+    font-size: 18px;
+    color: black;
+    padding-left: 10px;
+}
+
+.signature-title{
+    display:inline-flex;
+    padding-left: 5px;
+}
+
+.signature-title p{
+    font-size: 22px;
+}
+
+.signature{
+    display:inline-flex;
+    padding-left: 90px;
+    margin-bottom: -17px;
+}
+
+.signature p{
+    font-size: 18px;
+}
+
+.position{
+    display:inline-flex;
+    padding-left: 145px;
+    margin-top: -100px;
+}
+
+.position p{
+    font-size: 18px;
+}
+
+/* Print-specific styles */
+@media print {
+    @page {
+        size: Legal landscape;
+        margin: 10;
+    }
+
+    .print-btn {
+        display: none;
+    }
+
+    body {
+        margin: 0;
+        padding: 10px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .header {
+        margin: 0 12px;
+        padding: 5px;
+    }
+
+    .table {
+        width: 97%;
+        padding: 10px;
+        margin: 10px auto;
+        background-color: white;
+        height: auto;
+        min-height: 800px;
+    }
+
+    table {
+        width: 99%;
+        border-collapse: collapse;
+        table-layout: fixed;
+    }
+
+    th, td {
+        border: 2px solid black;
+        padding: 8px;
+        font-size: 14px;
+        word-wrap: break-word;
+    }
+
+    td {
+        height: auto;
+        min-height: 80px;
+        vertical-align: top;
+    }
+
+    /* Text content styling */
+    .table p{
+    font-size: 16px;
+    color: black;
+    padding-left: 1px;
+    margin-right: 10px;
+    text-align: justify;
+    }
+
+    .signature-title{
+        display:inline-flex;
+        padding-left: 5px;
+    }
+
+    .signature-title p{
+        font-size: 16px;
+    }
+
+    .signature{
+        display:inline-flex;
+        margin-bottom: -17px;
+    }
+
+    .signature p{
+        font-size: 12px;
+    }
+
+    .position{
+        display:inline-flex;
+        padding-left: 110px;
+        margin-top: -100px;
+    }
+
+    .position p{
+        font-size: 12px;
+    }
+
+
+
+    /* Prevent unwanted page breaks */
+    .header,
+    table,
+    .signature-section {
+        page-break-inside: avoid;
+    }
+
+    /* Ensure content stays within page boundaries */
+    * {
+        overflow: visible !important;
+    }
+}
+
+/* Additional print optimization */
+@media print and (color) {
+    * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}

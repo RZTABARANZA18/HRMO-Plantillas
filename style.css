@@ -1,0 +1,112 @@
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.logo img{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    display: inline-flex;
+}
+
+.header{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #008245;
+    padding: 5px;
+    margin: 12px;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 40px);
+    height: auto;
+}
+
+.header h1 {
+    color: white;
+    margin: 0;
+    padding-left: 20px;
+    font-size: 60px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.table {
+    width: calc(100% - 50px);
+    padding: 10px;
+    border: 2px solid black;
+    margin: 0 12px;
+    background-color: white;
+    height: auto;
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+th{
+    font-size: 16px;
+    border: 2px solid black;
+    background-color: white;
+    padding: 5px;
+}
+
+td{
+    border: 2px solid black;
+    background-color: white;
+    padding: 0;
+    vertical-align: top;
+}
+
+textarea {
+    font-size: 16px;
+    width: calc(100% - 4px);
+    height: 520px;
+    padding: 8px;
+    border: none;
+    resize: none;
+    box-sizing: border-box;
+}
+
+td p{
+    text-align: center;
+    background-color: white;
+    color: black;
+    margin: 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .header h1 {
+        font-size: 40px;
+    }
+    
+    textarea {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header h1 {
+        font-size: 30px;
+    }
+    
+    textarea {
+        height: 200px;
+    }
+}
+
+#jobOrderForm{
+    width: 100%;
+    height: 100%;
+}
